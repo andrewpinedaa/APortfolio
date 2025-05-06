@@ -259,7 +259,6 @@ footer .lead {
   color: var(--accent-color);
 }
 
-/* Media Queries */
 @media (max-width: 767.98px) {
   header {
     padding: 2rem 0;
@@ -334,7 +333,6 @@ footer .lead {
   margin-bottom: 1rem;
 }
 
-/* Hero Section for Homepage */
 .hero-section {
   text-align: center;
   padding: 3rem 0;
@@ -352,7 +350,6 @@ footer .lead {
   margin: 0 auto 2rem;
 }
 
-/* Skills Progress Bars */
 .skill-progress {
   height: 10px;
   background-color: #e9ecef;
@@ -374,7 +371,6 @@ footer .lead {
   margin-bottom: 5px;
 }
 
-/* Timeline for Education */
 .timeline {
   position: relative;
   max-width: 1200px;
@@ -435,6 +431,33 @@ footer .lead {
   border-radius: var(--border-radius);
   box-shadow: var(--box-shadow);
 }
+
+<style>
+.iframe-container {
+    position: relative;
+    width: 100%;
+    padding-top: 75%; 
+    overflow: hidden;
+    margin-bottom: 20px;
+}
+
+.responsive-iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+
+@media (max-width: 768px) {
+    .iframe-container {
+        padding-top: 100%; 
+    }
+}
+</style>
 
 :root {
   --primary-color: #1e4d7b;
